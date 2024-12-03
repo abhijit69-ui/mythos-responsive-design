@@ -1,0 +1,6 @@
+@use '../util' as media;
+
+.wrapper {
+  width: min(100% - media.rem(48), media.rem(1200));
+  margin-inline: auto;
+}
