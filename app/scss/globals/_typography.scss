@@ -1,0 +1,28 @@
+@use '../util' as media;
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(media.rem(28), media.rem(16) + 2vw, media.rem(40));
+}
+
+h2 {
+  font-size: clamp(media.rem(22), media.rem(14) + 1.5vw, media.rem(36));
+}
+
+p {
+  margin-top: 0;
+  font-size: media.rem(16);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
