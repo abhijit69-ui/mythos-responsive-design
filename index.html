@@ -21,8 +21,36 @@
     <script src="/app/js/script.js"></script>
   </head>
   <body>
-    <header></header>
-    <main>
+    <a href="#main" class="visually-hidden">Skip to main content</a>
+    <header class="topnav">
+      <h2 class="visually-hidden">Header</h2>
+      <div class="wrapper topnav__wrapper">
+        <a class="topnav__homelink" href="/">
+          <img
+            src="/img/logo-mythos.svg"
+            class="topnav__logo"
+            alt="mythos homepage"
+            width="128"
+            height="36"
+          />
+        </a>
+        <nav>
+          <ul class="topnav__links">
+            <li class="topnav__item">
+              <a href="#" class="topnav__link">Features</a>
+            </li>
+            <li class="topnav__item">
+              <a href="#" class="topnav__link">Pricing</a>
+            </li>
+            <li class="topnav__item">
+              <a href="#" class="topnav__link">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
       <article>
         <section class="wrapper">
           <h1>Find that elusive unicorn.</h1>
