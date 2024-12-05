@@ -1,0 +1,46 @@
+@use '../util' as media;
+
+.hero {
+  background-color: var(--hero-bg);
+
+  &__wrapper {
+    padding-block: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    @include media.breakpoint(large) {
+      padding-block: 40px 80px;
+      flex-direction: row-reverse;
+      gap: 9%;
+    }
+  }
+
+  &__image {
+    width: 62%; //mobile responsive
+    max-width: media.rem(483); //not to exceed max-width on desktop
+
+    @include media.breakpoint(large) {
+      flex: 5;
+    }
+  }
+  &__text {
+    color: var(--text-light);
+
+    @include media.breakpoint(large) {
+      flex: 6;
+    }
+  }
+  &__title {
+  }
+
+  &__content {
+  }
+
+  &__button {
+    &.primary {
+      margin-inline-end: 20px;
+    }
+  }
+}

@@ -21,9 +21,7 @@
   }
 
   &__logo {
-    display: block;
     width: media.rem(70);
-    height: auto;
 
     @include media.breakpoint(large) {
       width: media.rem(128);
